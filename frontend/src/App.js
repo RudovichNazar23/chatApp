@@ -1,8 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./components/Home";
-import LoginForm from "./components/LoginForm";
-import RegistrationForm from "./components/RegistrationForm";
+import FormContainer from "./components/FormContainer";
 import PageNotFound from "./components/PageNotFound";
 import ProtectedRouter from "./components/ProtectedRouter";
 
@@ -16,8 +15,8 @@ function App() {
               <Home />
             </ProtectedRouter>
           } path="/"/>
-          <Route element={<LoginForm />} path="login"/>
-          <Route element={<RegistrationForm />} path="registration"/>
+          <Route element={<FormContainer />} path="login"/>
+          <Route element={<FormContainer />} path="registration"/>
           <Route element={<PageNotFound />} path="*"/>
         </Routes>
       </BrowserRouter>
