@@ -6,7 +6,7 @@ export default function FormErrorList({ formErrors }){
     useEffect(
         () => {
             setErrors(formErrors)
-        }, [errors]
+        }, [formErrors]
     );
 
     return (
